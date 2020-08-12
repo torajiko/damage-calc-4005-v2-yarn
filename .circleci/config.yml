@@ -24,7 +24,7 @@ jobs:
       - run: mkdir junit
       - run:
           command: node_modules/.bin/mocha test --reporter mocha-junit-reporter
-          ecviroment:
+          ecvironment:
             MOCHA_FILE: ./junit/test-results.xml
           when: always
       - store_test_results:
